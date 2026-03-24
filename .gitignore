@@ -19,6 +19,8 @@ terraform/.terraform.lock.hcl
 *~
 .nyc_output/
 package-lock.json
+allure-results/
+allure-report/
 
 # Ignore AWS credentials file
 .awsenv

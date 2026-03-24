@@ -23,6 +23,22 @@ module.exports = {
     }
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  reporters: [
+    'default',
+    [
+      'jest-allure',
+      {
+        outputPath: 'allure-results',
+        usePackageJsonReporter: false,
+        usePath: true,
+        suiteTitle: true,
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+        issueLinkTemplate: 'https://github.com/arvinlml/node_aws_tfm/issues/{}',
+        tmsLinkTemplate: 'https://jira.example.com/browse/{}'
+      }
+    ]
+  ],
   globals: {
     'ts-jest': {
       isolatedModules: true,
