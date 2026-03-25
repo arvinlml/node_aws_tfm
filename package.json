@@ -19,6 +19,7 @@
     "type-check": "tsc --noEmit",
     "compile": "tsc",
     "start": "node dist/index.js",
+    "dev:server": "npm run compile && node dist/dev-server.js",
     "test:allure": "npm run build && jest --reporters=default --reporters=jest-allure",
     "allure:report": "allure generate allure-results --clean -o allure-report",
     "allure:serve": "allure serve allure-results",
@@ -44,10 +45,12 @@
     "@aws-sdk/client-sfn": "^3.420.0",
     "@aws-sdk/client-sns": "^3.420.0",
     "@aws-sdk/util-dynamodb": "^3.420.0",
+    "@types/express": "^5.0.6",
     "archiver": "^7.0.1",
     "aws-lambda": "^1.0.7",
     "dotenv": "^17.3.1",
-    "esbuild": "^0.27.4"
+    "esbuild": "^0.27.4",
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "@types/archiver": "^7.0.0",
