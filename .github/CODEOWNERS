@@ -1,0 +1,69 @@
+# CODEOWNERS Configuration
+
+#
+
+# This file defines which users or teams should be contacted for review whenever
+
+# changes are made to certain files.
+
+#
+
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+#
+
+# Global owners - require review for all changes
+
+- @arvinlml
+
+# Build and scripts
+
+/scripts/ @arvinlml
+/jest.config.\* @arvinlml
+/tsconfig.json @arvinlml
+/package.json @arvinlml
+/package-lock.json @arvinlml
+
+# Source code
+
+/src/ @arvinlml
+/src/handlers/ @arvinlml
+/src/services/ @arvinlml
+/src/executors/ @arvinlml
+/src/utils/ @arvinlml
+
+# Tests
+
+/tests/ @arvinlml
+jest.config.json @arvinlml
+jest.setup.js @arvinlml
+
+# GitHub configuration
+
+/.github/ @arvinlml
+/.github/workflows/ @arvinlml
+/.github/settings.yml @arvinlml
+/.github/scripts/ @arvinlml
+
+# Documentation
+
+\*.md @arvinlml
+/docs/ @arvinlml
+
+# Infrastructure
+
+/terraform/ @arvinlml
+_.tfvars @arvinlml
+_.tf @arvinlml
+
+# Configuration files
+
+.eslintrc* @arvinlml
+.gitignore @arvinlml
+.env* @arvinlml
+
+# Note: These are default owners. You can add team-specific owners as needed:
+
+# /src/handlers/ @organization/handlers-team
+
+# /src/services/ @organization/services-team
